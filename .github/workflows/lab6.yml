@@ -6,7 +6,7 @@ on:
       - completed
 
 env:
-  IMAGE_REGISTRY: "https://hub.docker.com"
+  IMAGE_REGISTRY: "https://registry.hub.docker.com"
   FOO_IMAGE_NAME: "sayantanstar/myflaskapp"
   FOO_IMAGE_VERSION: "v7"
 
@@ -27,7 +27,7 @@ jobs:
         with:
           registry: "docker.io"
           username: "sayantanstar"
-          password: ${{ secrets.GH_TOKEN }}
+          password: ${{ secrets.TOKEN_FROM_DOCKERHUB }}
 
       - name: Publish using docker-compose
         uses: 0x4r45h/docker-compose-ci@v0.1.0
