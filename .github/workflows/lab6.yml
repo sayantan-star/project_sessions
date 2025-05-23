@@ -6,7 +6,7 @@ on:
       - completed
 
 env:
-  IMAGE_REGISTRY: "https://registry.hub.docker.com"
+  IMAGE_REGISTRY: "https://hub.docker.com"
   FOO_IMAGE_NAME: "sayantanstar/myflaskapp"
   FOO_IMAGE_VERSION: "v7"
 
